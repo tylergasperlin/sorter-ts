@@ -1,0 +1,18 @@
+{
+  "name": "sorter-ts",
+  "version": "1.0.0",
+  "description": "Create a typescript config file tsc --init   ( === tsconfig.json)",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodomon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
