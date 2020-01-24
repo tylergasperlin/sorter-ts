@@ -1,7 +1,14 @@
-"use strict";
 
-console.log('hi there')
+class Sorter {
+    constructor(public colleciton: number[]){}
 
-var logSomething = () =>{
-    console.log('something')
+    sort(): void{
+        
+    }
+
+    //same as above
+    // constructor(collection: number[]){
+    //     this.collection = collection
+    // }
 }
+
