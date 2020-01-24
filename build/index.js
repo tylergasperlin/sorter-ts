@@ -1,5 +1,6 @@
 "use strict";
 var Sorter = /** @class */ (function () {
+    //when you use or operator you can only access the properties that are common between number and string
     function Sorter(collection) {
         this.collection = collection;
     }
@@ -8,11 +9,13 @@ var Sorter = /** @class */ (function () {
         //bubble sort
         for (var i = 0; i < length; i++) {
             for (var j = 0; j < length - i - 1; j++) {
+                //if collection is an array of numbers
                 if (this.collection[j] > this.collection[j + 1]) {
                     var leftHand = this.collection[j];
                     this.collection[j] = this.collection[j + 1];
                     this.collection[j + 1] = leftHand;
                 }
+                //if collection is a string
             }
         }
     };
