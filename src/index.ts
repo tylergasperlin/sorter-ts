@@ -1,4 +1,4 @@
-import {Sorter} from './sorter';
+import {Sorter} from './Sorter';
 import {NumbersCollection} from './NumbersCollection';
  
 const numbersCollection = new NumbersCollection([-5000,100000,1000,10,3,-5,0])
