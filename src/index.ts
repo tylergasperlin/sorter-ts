@@ -23,7 +23,7 @@ class Sorter {
                 //if collection is a string
                 //typeof for string number bool symbols
                 if(typeof this.collection === 'string'){
-                    this.collection.
+                    console.log(this.collection)
                 }
             }
         }
