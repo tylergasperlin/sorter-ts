@@ -1,6 +1,12 @@
-export class NumbersCollection {
+import {Sorter} from './Sorter'
+
+
+export class NumbersCollection extends Sorter {
     //this initialized data, assigns data to type number array, creates a constructor that sets this.data = data
-    constructor(public data: number[]){}
+    constructor(public data: number[]){
+        //reference to parent class
+        super(); 
+    }
     //get means we can can access length by using numbersCollection.length instead of numbersCllection.length()
     get length(): number{
         return this.data.length
