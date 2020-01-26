@@ -18,3 +18,11 @@ add this to package.json
   },
 
   
+
+  Interface: 1) allows us  to set up a contract between different classses
+  2) use when we have very different objects that we want to work together
+  3) promotes loose coupling
+
+  Inheritance/Abstract classes: 1) sets up a contract between different classes
+  2) use when we are trying to build up a definition of an object
+  3) strongly couples classes together
