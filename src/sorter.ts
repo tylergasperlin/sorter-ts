@@ -1,8 +1,15 @@
-import { NumbersCollection } from './NumbersCollection';
+
+//directions on how you can be an argument to Sorter
+//tbis makes it so each use of Sorter must implement length commpare and swap
+interface Sortable {
+  length: number;
+  compare(leftIndex:number, rightIndex:number): boolean;
+  swap(leftIndex: number, rightIndex: number): void;
+}
 
 export class Sorter {
   //when you use or operator you can only access the properties that are common between number and string
-  constructor(public collection: NumbersCollection) {}
+  constructor(public collection: Sortable) {}
 
   sort(): void {
     const { length } = this.collection;
